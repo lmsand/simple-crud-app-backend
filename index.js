@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
   res.send("Hello from node api server updated")
 })
 
-mongoose.connect("mongodb+srv://lmsand99:boNRAsi4BLfbScmO@backenddb.ric2tiv.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB")
+mongoose.connect("mongodb+srv://lmsand99:<password>.ric2tiv.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB")
 .then(() => {
   console.log("connected to database")
   app.listen(8000, () => {
